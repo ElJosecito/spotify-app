@@ -18,7 +18,7 @@ function AlbumRCard({id, name, img, date, type}) {
       dispatch(HandleAddAlbum(id))
     }
 
-    const algo = () =>{
+    const ManageType = () =>{
       if (type == 'SINGLE'){
         HandleTrackFunc()
       }else{
@@ -33,7 +33,7 @@ function AlbumRCard({id, name, img, date, type}) {
         <div>{name}</div>
         <p>{type}</p>
         <h2>{date}</h2>
-        <button className='m-2' onClick={algo}>add</button>
+        <button className='m-2' onClick={ManageType}>add</button>
         <button>remove</button>
     </div>
     
