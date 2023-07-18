@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const UserSlice = createSlice({
-    name: "UserFunction",
+    name: "User",
     initialState: {
         list: [],
     },
@@ -17,4 +17,21 @@ export const UserSlice = createSlice({
 export const { UserFunction } = UserSlice.actions;
 
 export default UserSlice.reducer;
+
+export const FetchCurrentUser = () => async (dispatch) => {
+
+    const token = localStorage.getItem('access_token');
+
+    try{
+        const response = await axios.get("https://api.spotify.com/v1/me", {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        });
+        dispatch(UserFunction(response.data));
+       // console.log(response.data);
+    }catch(error){
+        console.log(error);
+    }
+};
 

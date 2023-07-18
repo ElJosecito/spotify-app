@@ -1,10 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 
-import UserFunction from "./slices/UserSlice";
+import User from "./slices/UserSlice";
+import Recommendation from "./slices/RecommendationSlices";
+import HandleAdd from "./slices/HandleAdd";
 
 export default configureStore({
     reducer: {
-
+        User: User,
+        Recommendation: Recommendation,
+        HandleAdd: HandleAdd
     }
 })
