@@ -17,7 +17,6 @@ export const RecommendationSlices = createSlice({
 });
 
 export const { RecommendationFunc } = RecommendationSlices.actions;
-
 export default RecommendationSlices.reducer;
 
 //funciones
@@ -32,7 +31,7 @@ export const FetchRecommendations = (genere) => async (dispatch) => {
             }
         });
         dispatch(RecommendationFunc(response.data.tracks));
-        console.log(response.data.tracks);
+        //console.log(response.data.tracks);
     }catch(error){
         console.log(error);
     }
