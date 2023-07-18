@@ -19,7 +19,7 @@ function TrackList() {
         {trackList.items && trackList.items.length > 0 ? (
           trackList.items.map((e) => {
             return (
-              <TrackCard key={e.track.id} name={e.track.name}/>
+              <TrackCard key={e.track.id} id={e.track.id} name={e.track.name} img={e.track.album.images} album={e.track.album.name} type={e.track.album.album_type} duration={e.track.duration_ms}/>
             )
           })
         ) : (

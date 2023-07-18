@@ -19,7 +19,7 @@ function AlbumRCard({id, name, img, date, type}) {
       if (type == 'SINGLE'){
         HandleTrackFunc()
       }else{
-        HandleAddAlbum()
+        HandleAlbumFunc()
       }
     }
 
@@ -31,7 +31,6 @@ function AlbumRCard({id, name, img, date, type}) {
         <p>{type}</p>
         <h2>{date}</h2>
         <button className='m-2' onClick={ManageType}>add</button>
-        <button>remove</button>
     </div>
     
     </>

@@ -11,7 +11,7 @@ var Global = {
 	redirect_uri : "http://10.0.0.22:5173/",
 	client_id : "64363b6b951c47569e40229d762d1d1a",
 	client_secret : "02fd8ea2fd79434ab03cd453a913aaa1",
-	scopes : "user-library-read user-read-private user-read-email playlist-read-private user-library-modify"
+	scopes : "user-library-read user-read-private user-read-email playlist-read-private user-library-modify user-library-modify playlist-modify-public"
 }
 
 const spoty_url = `https://accounts.spotify.com/authorize?client_id=${Global.client_id}&response_type=code&redirect_uri=${Global.redirect_uri}&scope=${Global.scopes}`;
