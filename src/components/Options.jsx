@@ -32,14 +32,14 @@ function Options() {
         </div>
       </header>
       <section className="flex justify-center">
-        <div className="h-screen w-full max-w-screen-2xl pt-20 px-5 flex">
+        <div className="h-screen w-full max-w-screen-2xl pt-20 px-5 flex bg-[#191414]">
           <a href="/recommendations">
             <div className="m-3 w-56 h-56 bg-[#1DB954] text-2xl font-bold font-sans text-slate-100 flex justify-center items-center rounded-md">
               Recomendations
             </div>
           </a>
 
-          <a href="">
+          <a href="/tracklist">
             <div className="m-3 w-56 h-56 bg-[#1DB954] text-2xl font-bold font-sans text-slate-100 flex justify-center items-center rounded-md">
               Tracklist
             </div>

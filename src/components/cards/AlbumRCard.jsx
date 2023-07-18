@@ -4,9 +4,6 @@ import { HandleTrack, HandleAddAlbum } from "../../redux/slices/HandleAdd";
 import { useDispatch, useSelector } from "react-redux";
 
 function AlbumRCard({id, name, img, date, type}) {
-
-  const [idcard, SetIdCard] = useState()
-
   const HandleAdd = useSelector((state) => state.HandleAdd.list);
   const dispatch = useDispatch();
 
